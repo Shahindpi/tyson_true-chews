@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tyson Brand Page</title>
+	<meta name="description" content="Shop Tyson True Meals complete dog nutrition and True Chews natural dog treats at Petco. True Meals dry dog food is sold only at Petco.">
+</head>
+<body>
+<style>
+	h1, h2, h3, h4, h5, h6, a, button {
+		font-family: "PetcoCircularTT-Bold", arial !important;
+	}
+	p {
+		font-family: "PetcoCircularTT-Regular", arial !important;
+	}
+
+	*{ margin : 0; padding : 0; }
+
+	a{text-decoration: none; display: block;}
+
+	img{ width : 100%; }
+
+	.cta-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: nowrap;
+		text-decoration: none;
+	}
+
+	.cta-box a{
+		color : #00205B;
+		background-color : #fff;
+		height: 54px;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: nowrap;
+		text-decoration: none;
+		padding: 0 30px;
+		border-radius: 5px;
+		width: 150px;
+	}
+
+	/* Tyson brand page */
+	.brand-page-section{
+		display: block;
+	}
+
+	.brand-page-section .container{
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
+	.brand-page-section .container-fluid{
+		width: 100%;
+	}
+	.section-title a{
+		color : #000;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 25px;
+		padding : 46px 0 30px;
+		text-align: center;
+		font-weight: 600;
+	}
+
+	.flex-box{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	/*** Top Hero section ***/
+	.brand-page-section__top-hero .brand-page-section__top-hero--content{
+		background-color: #00205B;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col{
+		padding: 20px 15px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+		width : 40%;
+		padding-left: 10%;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+		background-color: #88D6F7;
+		width : 60%;
+		position: relative;
+		padding-right: 10%;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo{
+		max-width: 140px;
+		margin-left: -10px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+		color : #fff;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 36px;
+		max-width: 450px;
+		font-weight: 600;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+		color : #fff;
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 20px;
+		padding: 30px 0;
+		max-width: 400px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta{
+		justify-content: flex-start;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+		max-width: 100px;
+		position: absolute;
+		left: 30px;
+		top: 20px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__img{
+		margin: 0 auto;
+	}
+
+
+	/*** Category Section ***/
+	.brand-page-section__category{
+		padding: 20px 0;
+	}
+
+	.brand-page-section__category--content{
+		align-items: flex-start;
+		padding: 20px 0;
+	}
+
+	.brand-page-section__category--content .col{
+		width : 25%;
+	}
+
+	.brand-page-section__category--content .col .item-wrapper{
+		padding: 15px;
+		text-align: center;
+	}
+
+	.brand-page-section__category--content .col .item-wrapper__icon{
+		max-width: 150px;
+		margin: 0 auto;
+	}
+
+	.brand-page-section__category--content .col .item-wrapper__text a{
+		color : #000;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 16px;
+		max-width: 300px;
+    	margin: 0 auto;
+		font-weight: 600;
+	}
+
+
+	/*** Products Catelog Section ***/
+	.brand-page-section__catelog--content{
+		align-items: flex-start;
+		padding: 20px 0;
+	}
+
+	.brand-page-section__catelog--content .col{
+		width : 50%;
+	}
+
+	.brand-page-section__catelog--content .col .single-view{
+		text-align: center;
+		padding: 0 15px;
+	}
+
+	.brand-page-section__catelog--content .col .single-view__head{
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	.brand-page-section__catelog--content .col .single-view__sub-head{
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 16px;
+		padding: 15px 0 50px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper{
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 0 15px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item{
+		padding: 15px;
+		width: 42%;
+		margin: 0 auto;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item__img{
+		max-width: 180px;
+		margin: 0 auto;
+		padding: 0 15px 20px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item__headline a{
+		padding: 10px 0 20px;
+		display: block;
+		color : #333;
+		border-top: 1px solid #333;
+		font-family: "PetcoCircularTT-Regular", arial !important;
+		font-size: 16px;
+		min-height: 50px;
+	}
+
+	.brand-page-section__catelog--content .col .item-wrapper .single-item__cta a{
+		color: #001952;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 16px;
+		text-decoration: underline;
+		margin-bottom: 30px;
+		font-weight: 600;
+	}
+
+	.brand-page-section__catelog .catelog-row2 .col .single-view__sub-head{
+		background: #88D6F7;
+		padding : 25px 25px 50px;
+		font-size: 24px;
+		margin: -7px 0;
+	}
+
+	.brand-page-section__catelog .catelog-row2 .col:last-child .single-view{
+		padding: 5px;
+	}
+
+	/*** Bottom Hero Section ***/
+	.brand-page-section__bottom-hero{
+		background: #0081C7;
+	}
+
+	.brand-page-section__bottom-hero .col .logo-wrapper img{
+		padding: 0 20px;
+		max-width: 35%;
+	}
+
+	.brand-page-section__bottom-hero .col .single-img{
+		padding : 0 15px;
+		margin: -18px 0 0;
+	}
+
+	.brand-page-section__bottom-hero .col .logo-wrapper img:first-child{
+		border-right: 2px solid #fff;
+	}
+
+	.brand-page-section__bottom-hero .col .bottom-hero-text{
+		color: #fff;
+		font-family: "PetcoCircularTT-Bold", arial !important;
+		font-size: 40px;
+		padding: 30px 0 0;
+		text-align: center;
+	}
+
+
+	.m-hide {
+		display: block;
+	}
+	.d-hide{
+		display: none;
+	}
+
+	@media screen and (min-width: 1024px) and (max-width: 1200px) {
+		/* Top Hero section */
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+			padding-left: 5%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			padding-right: 5%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 30px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 18px;
+			padding: 25px 0;
+		}
+
+
+	}
+
+
+	@media screen and (min-width: 768px) and (max-width: 1023px) {
+		/* Top Hero section */
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+			padding-left: 4%;
+
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			padding-right: 4%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+			left: 20px;
+			top: 20px;
+			max-width: 80px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 24px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 16px;
+			padding: 20px 0;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta a{
+			width: 130px;
+		}
+
+		/*** Products Catelog Section ***/
+		.brand-page-section__catelog--content .col .item-wrapper .single-item{
+			width: 40%;
+		}
+
+
+		/* Bottom Hero */
+		.brand-page-section__bottom-hero .col .single-img{
+			margin: -13px 0 0;
+		}
+
+		.brand-page-section__bottom-hero .col .bottom-hero-text {
+			font-size: 30px;
+		}
+
+
+	}
+
+
+	@media screen and (max-width: 767px) {
+		/* Top Hero section */
+		.brand-page-section__top-hero .brand-page-section__top-hero--content{
+			flex-wrap: wrap;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
+			width: 100%;
+			padding: 30px 15px;
+			order: 2;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			width: 100%;
+			padding: 30px 15px 20px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+			left: 85%;
+    		top: 15px;
+			max-width: 50px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__logo{
+			left: 20px;
+			top: 20px;
+			max-width: 80px;
+			position: absolute;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 25px;
+			max-width: 280px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 16px;
+			padding: 20px 0;
+			max-width: 320px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta a{
+			width: 130px;
+		}
+
+
+		/* *** Category Section *** */
+		.brand-page-section__category--content{
+			max-width: 300%;
+			overflow-y: auto;
+			justify-content: space-between;
+		}
+
+		.brand-page-section__category--content .col{
+			min-width: 66%;
+		}
+
+		.brand-page-section__category--content .col .item-wrapper{
+			max-width: 80%;
+			margin: 0 auto;
+		}
+
+		.brand-page-section__category--content .col .item-wrapper__icon{
+			max-width: 150px;
+			margin: 0 auto;
+		}
+
+		.brand-page-section__category--content .col .item-wrapper__text a{
+			color : #000;
+			font-family: "PetcoCircularTT-Bold", arial !important;
+			font-size: 16px;
+		}
+
+
+		/*** Products Catelog Section ***/
+		.brand-page-section__catelog--content{
+			flex-wrap: wrap;
+		}
+
+		.brand-page-section__catelog--content .col{
+			width: 100%;
+		}
+
+		.brand-page-section__catelog--content .col:last-child{
+			overflow-y: auto;
+		}
+
+		.brand-page-section__catelog--content .col .single-view__sub-head {
+			padding: 15px 0;
+		}
+
+		.brand-page-section__catelog--content .col .item-wrapper{
+			width : 270%;
+			overflow-y: auto;
+			flex-wrap: nowrap;
+			justify-content: space-around;
+			padding: 50px 0 0;
+		}
+
+		.brand-page-section__catelog--content .col .item-wrapper .single-item{
+			width : 70%;
+		}
+
+		.brand-page-section__catelog .catelog-row2 .col:first-child{
+			order : 2;
+			overflow-y: auto;
+		}
+
+		.brand-page-section__catelog .catelog-row2 .col:last-child .single-view{
+			padding: 0;
+		}
+
+
+		/*** Bottom Hero Section ***/
+		.brand-page-section__bottom-hero {
+			background: none;
+		}
+
+		.brand-page-section__bottom-hero--content{
+			flex-wrap: wrap;
+		}
+
+		.brand-page-section__bottom-hero .col .bottom-hero-text{
+			font-size: 30px;
+		}
+
+		.brand-page-section__bottom-hero .col:first-child{
+			order: 2;
+		}
+
+		.brand-page-section__bottom-hero .col:last-child{
+			background: #0081C7;
+			padding : 40px 0 200px;
+		}
+		
+		.brand-page-section__bottom-hero .col .single-img {
+			padding: 0;
+			margin: -170px 0 0;
+		}
+
+
+		.m-hide {
+		display: none;
+		}
+		.d-hide{
+			display: block;
+		}
+		.section-title {
+			max-width: 280px;
+			margin: 0 auto;
+		}
+		
+
+	}
+
+	@media screen and (min-width : 460px) and (max-width: 767px) {
+
+		/* Top Hero section */
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
+			width: 100%;
+			padding: 30px 15px 20px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
+			left: 85%;
+    		top: 15px;
+			max-width: 50px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper{
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+			text-align: center;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__logo{
+			left: 20px;
+			top: 20px;
+			max-width: 80px;
+			position: absolute;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
+			font-size: 25px;
+			max-width: 100%;
+			padding: 0 19%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
+			font-size: 16px;
+			padding: 20px 19%;
+			max-width: 100%;
+		}
+
+	}
+
+
+	@media screen and (max-width: 480px) {
+
+
+
+	}
+
+	@media screen and (min-width:480px) and (max-width: 767px) {
+
+	}
+
+	@media screen and (max-width: 320px) {
+
+	}
+
+	
+
+	
+
+
+</style>
+
+	<!-- *** Tyson brand page ***  -->
+	<div class="brand-page-section">
+		<!-- Top hero -->
+		<div class="brand-page-section__top-hero container-fluid">
+			<div class="brand-page-section__top-hero--content flex-box">
+				<div class="col">
+					<div class="text-wrapper">
+						<div class="text-wrapper__logo m-hide"><img src="images/logo/logo-white.png" /></div>
+						<div class="text-wrapper__headline">ELEVATE YOUR DOG’S MEAL EXPERIENCE</div>
+						<div class="text-wrapper__subhead">True Meals dog food is designed by culinary experts and pet nutritionists.</div>
+						<div class="text-wrapper__cta cta-box"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:Tyson:pov:1:truemeals:shopnow" onclick="clickTrackLink(this);">SHOP NOW</a></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="product-wrapper">
+						<div class="product-wrapper__badge"><img src="images/icon/new-to-petco.png" /> </div>
+						<div class="product-wrapper__logo d-hide"><img src="images/logo/logo-black.png" /> </div>
+						<div class="product-wrapper__img"><img src="images/pov/hero_pov1-dsk.png" alt="True Meals, new to Petco. Images of True Meals multi-protein dog food recipes and pieces of dog food spilling out of the bag" /> </div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+
+		<!-- Category Section -->
+		<div class="brand-page-section__category container-fluid">
+			<div class="brand-page-section__category--content flex-box container">
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon1.png" alt=" United States of America map icon" /></a></div>
+						<div class="item-wrapper__text"><a href="">USA-sourced protein and vegetables</a></div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon2.png" alt=" Leaf icon" /></a></div>
+						<div class="item-wrapper__text"><a href="">Includes added vitamins, minerals and amino acids dogs need to thrive</a></div>
+					</div>
+				</div>	
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon3.png" alt="Navy heart with a paw print icon in the middle" /></a></div>
+						<div class="item-wrapper__text"><a href="">Gently baked to retain ingredients, nutrients and flavors</a></div>
+					</div>
+				</div>	
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="item-wrapper__icon"><a href=""><img src="images/icon/icon4.png" alt=" Icon of chemical beaker with a cancel symbol over it" /></a></div>
+						<div class="item-wrapper__text"><a href="">No artificial flavors or preservatives</a></div>
+					</div>
+				</div>					
+			</div>
+		</div>
+
+		<!-- Products Catelog Section -->
+		<div class="brand-page-section__catelog container-fluid">
+			<div class="section-title"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:headline:1:truemealsnourishyourdoginanewway:headline" onclick="clickTrackLink(this);">Nourish your dog in a whole new way</a></div>
+			<div class="brand-page-section__catelog--content flex-box container">
+				<div class="col">
+					<div class="single-view">
+						<div class="single-view__head m-hide">Complete nutrition all in one resealable bag</div>
+						<div class="single-view__sub-head m-hide">Simply scoop, serve and store in your pantry.</div>
+						<div class="single-view__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:headline:1:truemebowlofdogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutrition-feature.png" alt="Dog food in bowl surrounded by protein. Chewy beef, fish and chicken; crunchy bites, and dried sweet potato and green beans." /></a> </div>
+					</div>
+				</div>
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:1:smallbreeddrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product1.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:1:smallbreeddrydogfood:headline" onclick="clickTrackLink(this);">True Meals Multi-Protein Small Breed Dry Dog Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:1:smallbreeddrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:2:puppydrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product2.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:2:puppydrydogfood:headline" onclick="clickTrackLink(this);">True Meals Multi-Protein Dry Puppy Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:2:puppydrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:3:adultmultidrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product3.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:3:adultmultidrydogfood:headline" onclick="clickTrackLink(this);">True Meals Multi-Protein Adult Dry Dog Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:3:adultmultidrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:4:adultchickendrydogfood:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product4.png" /></a></div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:4:adultchickendrydogfood:headline" onclick="clickTrackLink(this);">True Meals Chicken Recipe Adult Dry Dog Food</a></div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod1dogtruemeals:4:adultchickendrydogfood:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+					</div>
+					
+				</div>			
+			</div>
+		</div>
+
+		<!-- Products Catelog Section Second Row -->
+		<div class="brand-page-section__catelog container-fluid">
+			<div class="section-title"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:headline:1:naturalchewssourcedinus:headline" onclick="clickTrackLink(this);">Natural chews, sourced and made in the USA</a></div>
+			<div class="brand-page-section__catelog--content flex-box container catelog-row2">
+				<div class="col">
+					<div class="item-wrapper">
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:1:truechewsnaturalchicken:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product5.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:1:truechewsnaturalchicken:headline" onclick="clickTrackLink(this);">True Chews Natural Regular Chicken for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:1:truechewsnaturalchicken:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:2:truechewsminibeef:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product6.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:2:truechewsminibeef:headline" onclick="clickTrackLink(this);">True Chews Natural Mini Chicken for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:2:truechewsminibeef:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:3:truechewsminichicken:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product7.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:3:truechewsminichicken:headline" onclick="clickTrackLink(this);">True Chews Natural Mini Beef for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dognaturalchews:3:truechewsminichicken:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+						<div class="single-item">
+							<div class="single-item__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dogtruemeals:4:truechewsregularbeef:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutri-product8.png" /></a> </div>
+							<div class="single-item__headline"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dogtruemeals:4:truechewsregularbeef:headline" onclick="clickTrackLink(this);">True Chews Natural Regular Beef for Dogs</a> </div>
+							<div class="single-item__cta"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:contentmod2dogtruemeals:4:truechewsregularbeef:shopnow" onclick="clickTrackLink(this);">Shop Now</a></div>
+						</div>
+					</div>
+					
+				</div>		
+				<div class="col">
+					<div class="single-view">
+						<div class="single-view__img"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:tyson:image:1:dog:image" onclick="clickTrackLink(this);"><img src="images/nutritions/nutrition-feature2.png" alt="Image of a happy dog with his paws on the kitchen counter." /></a> </div>
+						<div class="single-view__sub-head">True Chews Dog Treats are made from natural ingredients like the real protein your dog craves.</div>
+					</div>
+				</div>	
+			</div>
+		</div>
+
+		<!-- Bottom Hero Section -->
+		<div class="brand-page-section__bottom-hero container-fluid">
+			<div class="brand-page-section__bottom-hero--content flex-box container">
+				<div class="col">
+					<div class="single-img">
+						<a class="m-hide" href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:Tyson:pov:1:truemeals:shopnow" onclick="clickTrackLink(this);"><img src="images/pov/bottom-hero.png" alt="True Meals and True Chews logos and product packages." /></a>
+						<a class="d-hide" href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:Tyson:pov:1:truemeals:shopnow" onclick="clickTrackLink(this);"><img src="images/pov/hero_pov1-mob.png" alt="True Meals and True Chews logos and product packages." /></a>
+					</div>
+				</div>
+				<div class="col">
+					<div class="logo-wrapper flex-box">
+						<img src="images/pov/true-meals.png" />
+						<img src="images/pov/true-chews.png" />
+					</div>
+					<div class="bottom-hero-text">The answer is True.™</div>
+				</div>			
+			</div>
+		</div>
+
+	</div>
+</body>
+</html>
