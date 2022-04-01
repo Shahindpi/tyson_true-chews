@@ -44,6 +44,7 @@
 		padding: 0 30px;
 		border-radius: 5px;
 		width: 150px;
+		text-transform: uppercase;
 	}
 
 	/* Tyson brand page */
@@ -84,28 +85,61 @@
 	}
 
 	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
-		width : 40%;
-		padding-left: 10%;
+		width : 60%;
+		padding-left: 5%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
 	}
 
 	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
 		background-color: #88D6F7;
-		width : 60%;
+		width : 40%;
 		position: relative;
-		padding-right: 10%;
 	}
 
-	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo{
-		max-width: 140px;
-		margin-left: -10px;
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper{
+		width: 70%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .pov-cta{
+		width: 30%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo img{
+		max-width: 160px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo .logo-wrapper{
+		display: flex;
+    	align-items: center;
+		flex-wrap: nowrap;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo .logo-wrapper img{
+		padding: 0 20px;
+	}
+
+	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo .logo-wrapper img:first-child{
+		border-right: 4px solid #fff;
+
 	}
 
 	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
 		color : #fff;
 		font-family: "PetcoCircularTT-Bold", arial !important;
-		font-size: 36px;
-		max-width: 450px;
+		font-size: 40px;
 		font-weight: 600;
+		text-transform: uppercase;
+		padding-top: 30px;
 	}
 
 	.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
@@ -129,6 +163,7 @@
 
 	.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__img{
 		margin: 0 auto;
+		padding: 0 10%;
 	}
 
 
@@ -281,20 +316,36 @@
 	@media screen and (min-width: 1024px) and (max-width: 1200px) {
 		/* Top Hero section */
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
-			padding-left: 5%;
-		}
-
-		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
-			padding-right: 5%;
+			padding-left: 2%;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
-			font-size: 30px;
+			font-size: 28px;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
 			font-size: 18px;
 			padding: 25px 0;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo img {
+			max-width: 130px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo .logo-wrapper img {
+			padding: 0 15px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper {
+			width: 60%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .pov-cta {
+			width: 40%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__img {
+			padding: 0 5%;
 		}
 
 
@@ -319,7 +370,8 @@
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
-			font-size: 24px;
+			font-size: 22px;
+			padding-top: 15px;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
@@ -328,7 +380,30 @@
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta a{
-			width: 130px;
+			width: 90px;
+			padding: 0 20px;
+			font-size: 14px;
+			height: 48px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo img {
+			max-width: 110px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo .logo-wrapper img {
+			padding: 0;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper {
+			width: 70%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .pov-cta {
+			width: 30%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__img {
+			padding: 0;
 		}
 
 		/*** Products Catelog Section ***/
@@ -353,32 +428,46 @@
 	@media screen and (max-width: 767px) {
 		/* Top Hero section */
 		.brand-page-section__top-hero .brand-page-section__top-hero--content{
-			flex-wrap: wrap;
+			flex-wrap: nowrap;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content {
+			background-color: #88D6F7;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:first-child{
-			width: 100%;
+			width: 60%;
 			padding: 30px 15px;
-			order: 2;
+			flex-wrap: wrap;
+			background-color: #00205B;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
-			width: 100%;
+			width: 40%;
 			padding: 30px 15px 20px;
 		}
 
-		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__badge{
-			left: 85%;
-    		top: 15px;
-			max-width: 50px;
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper .product-wrapper__img{
+			position: relative;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper .product-wrapper__img img{
+			position: absolute;
+			width: 160%;
+			right: 0;
+    		bottom: -80px;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper{
 			display: flex;
 			flex-wrap: wrap;
 			align-items: center;
-			justify-content: center;
-			text-align: center;
+			justify-content: flex-start;
+			width: 100%;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .pov-cta {
+			width: 100%;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__logo{
@@ -388,9 +477,22 @@
 			position: absolute;
 		}
 
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo img {
+			max-width: 80px;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__logo .logo-wrapper img {
+			padding: 0;
+		}
+
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
 			font-size: 25px;
 			max-width: 280px;
+			padding: 10px 0 0;
+		}
+
+		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .pov-cta {
+			justify-content: flex-start;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
@@ -400,7 +502,12 @@
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__cta a{
-			width: 130px;
+			padding: 0;
+			width: auto;
+			background-color: unset;
+			color: #fff;
+			text-transform: capitalize;
+			text-decoration: underline;
 		}
 
 
@@ -518,7 +625,7 @@
 		/* Top Hero section */
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child{
-			width: 100%;
+			width: 40%;
 			padding: 30px 15px 20px;
 		}
 
@@ -528,25 +635,11 @@
 			max-width: 50px;
 		}
 
-		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper{
-			display: flex;
-			flex-wrap: wrap;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-		}
-
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col:last-child .product-wrapper__logo{
 			left: 20px;
 			top: 20px;
 			max-width: 80px;
 			position: absolute;
-		}
-
-		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__headline{
-			font-size: 25px;
-			max-width: 100%;
-			padding: 0 19%;
 		}
 
 		.brand-page-section__top-hero .brand-page-section__top-hero--content .col .text-wrapper__subhead{
@@ -586,17 +679,26 @@
 			<div class="brand-page-section__top-hero--content flex-box">
 				<div class="col">
 					<div class="text-wrapper">
-						<div class="text-wrapper__logo m-hide"><img src="images/logo/logo-white.png" /></div>
-						<div class="text-wrapper__headline">ELEVATE YOUR DOG’S MEAL EXPERIENCE</div>
-						<div class="text-wrapper__subhead">True Meals dog food is designed by culinary experts and pet nutritionists.</div>
-						<div class="text-wrapper__cta cta-box"><a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:Tyson:pov:1:truemeals:shopnow" onclick="clickTrackLink(this);">SHOP NOW</a></div>
+						<div class="text-wrapper__logo">
+							<div class="logo-wrapper">
+								<img src="images/logo/logo-white.png" />
+								<img src="images/pov/true-chews.png" />
+							</div>
+						</div>
+						<div class="text">
+							<div class="text-wrapper__headline">The answer is True.™</div>
+						</div>
+					</div>
+					<div class="pov-cta">
+						<div class="text-wrapper__cta cta-box">
+							<a href="/shop/en/petcostore" manual_cm_sp="sponsoredbrandpage:Tyson:pov:1:truemeals:shopnow" onclick="clickTrackLink(this);">Shop Now</a>
+						</div>
 					</div>
 				</div>
 				<div class="col">
 					<div class="product-wrapper">
-						<div class="product-wrapper__badge"><img src="images/icon/new-to-petco.png" /> </div>
-						<div class="product-wrapper__logo d-hide"><img src="images/logo/logo-black.png" /> </div>
-						<div class="product-wrapper__img"><img src="images/pov/hero_pov1-dsk.png" alt="True Meals, new to Petco. Images of True Meals multi-protein dog food recipes and pieces of dog food spilling out of the bag" /> </div>
+						
+						<div class="product-wrapper__img"><img src="images/refresh/hero_pov1.png" alt="True Meals, new to Petco. Images of True Meals multi-protein dog food recipes and pieces of dog food spilling out of the bag" /> </div>
 					</div>
 				</div>
 				
